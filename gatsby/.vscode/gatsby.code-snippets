@@ -1,0 +1,52 @@
+{
+
+  "React Component": {
+    "prefix": "componentTemplate",
+    "body": [
+      "import React from 'react';",
+      "//import { useStaticQuery, graphql } from 'gatsby';",
+      "//import { Link } from 'gatsby';",
+      "//import Img from 'gatsby-image';",
+      "//import {  } from 'react-icons';",
+      "",
+      "import * as S from './styles';",
+      "",
+      "const ${TM_DIRECTORY/^.+\\/(.*)$/${1:/capitalize}/}: React.FC = () => {",
+      "  return (",
+      "    <S.Container>",
+      "      <S.Header>${TM_DIRECTORY/^.+\\/(.*)$/${1:/capitalize}/}</S.Header>",
+      "    </S.Container>",
+      "  )",
+      "};",
+      "",
+      "export default ${TM_DIRECTORY/^.+\\/(.*)$/${1:/capitalize}/};",
+    ]
+  },
+
+  "React Style": {
+    "prefix": "styleTemplate",
+    "body": [
+      "import styled from 'styled-components';",
+      "// import { Link } from 'gatsby';",
+      "// import media from 'styled-media-query';",
+      "",
+      "export const Container = styled.section`",
+      "",
+      "// ${media.lessThan('large')`...`}",
+      "`;",
+      "",
+      "export const Header = styled.h1`",
+      "",
+      "`;",
+    ]
+  },
+
+
+  "Template": {
+    "prefix": "00000",
+    "body": [
+      ""
+    ]
+  },
+
+}
